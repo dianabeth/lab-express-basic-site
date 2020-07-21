@@ -1,54 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>about</title>
+<h1>My name is {{ name }}</h1>
+  <h4>I am {{ age }} years old</h4>
+  <p>I live in {{ location.city }}, {{ location.country }} </p>
+  <p>I am married to {{ husband }} </p>
+  <span>These are my children:</span>
+  <ul>
+    {{#each children}} 
+     <li>
+      {{> children}}
+     </li>
+    {{/each}}
+  </ul>
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="/styles.css" />
-  </head>
-  <body>
+
     <div class="container shadow">
-      <nav class="navbar navbar-expand-lg navbar-light bg-white py-2">
-        <a class="navbar-brand" href="/home">
-          NGOZI OKONJO-IWEALA
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarTogglerListItem"
-          aria-controls="navbarTogglerListItem"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerListItem">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active px-3">
-              <a href="#" class="nav-link"></a>
-            </li>
-            <li class="nav-item active px-3">
-              <a href="#" class="nav-link"></a>
-            </li>
-            <li class="nav-item active px-3">
-              <a href="/home" class="nav-link">Previous</a>
-            </li>
-            <li class="nav-item active px-3">
-              <a href="/work" class="nav-link">Next</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-
     <header>
       <div class="container">
         <div class="row pl-3 py-2 my-2 d-flex justify-content-center text-dark">
@@ -166,5 +130,5 @@
         </div>
       </div>
     </section>
-  </body>
-</html>
+    </div>
+
