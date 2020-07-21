@@ -1,0 +1,51 @@
+/* body {
+  background-color: bisque;
+  color: rebeccapurple;
+}
+
+img {
+  height: 300px;
+}*/
+
+h1 {
+  color: brown;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.col-2 {
+  text-align: center;
+}
+
+.styled ul > li {
+  text-indent: -5px;
+  font-size: 1rem;
+}
+.styled ul > li:before {
+  content: '- ';
+  text-indent: -5px;
+  color: blue;
+}
+
+main .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.float-left {
+  position: relative;
+  left: -25px;
+  bottom: -10px;
+}
+
+.navbar-brand {
+  color: burlywood !important;
+}
+p {
+  color: darkblue;
+}
+
+p > a {
+  color: brown;
+}
+ul > li > a {
+  color: red !important;
+}
